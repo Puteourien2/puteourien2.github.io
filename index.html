@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- tout ce qui est ici réprésente la "tête" de ton site. -->
+
+<!-- 
+CE QUE TU NE DOIS PAS TOUCHER :
+- meta charset : c'est pour que les accents et les caractères spéciaux soient affichés correctement.
+(parce que sinon, baaaaah les accents et les caractères spéciaux vont ce faire foutre chez les guêpes.)
+- meta viewport : c'est pour que ton site soit responsive, en gros "ca marchera" sur les téléphones (entre guillemets car ca suffit pas.)
+- le link rel icon : c'est pour que tu puisse mettre une icône à ton site (celle qui s'affiche dans les onglets du navigateur, et aussi dans les favoris.)
+( juste utilise une image de 16x16 ou 32x32 pixels, et met la dans le dossier "assets" pour que ca marche.)
+
+Pour le reste, change à ta guise!
+-->
+<!-- <br> & </br> correspondent à un saut de ligne.-->
+ <!-- <span style="font-size: smaller;"><i></i></span> = écrire en plus petit.-->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Putéourien 2 - Le menu </title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <meta content="Putéourien 2 - Le menu" property="og:title" />
+    <meta content="Putéourien 2, mais c'est le menu du site." property="og:description" />
+    <meta content="LIEN_ICI" property="og:url" />
+    <meta content="MINIATURE_ICI" property="og:image" />
+    <meta content="COULEUR_HEXADECIMALE_ICI" data-react-helmet="true" name="theme-color" />
+</head>
+
+<body>
+    <div class="title">
+        <h1>Putéourien 2 - Le grand Marabout de France</h1>
+        <h2>L'accueil du site réel</h2>
+        <h3 id="randomWord"> ??? </h3>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/game.html">Projets</a></li>
+        </ul>
+    </nav>
+
+    <div class="explique">
+        <h1>Qui suis-je ?</h1>
+        <p>
+            Alcoolique anonyme. Je sais plus comment je m'appelle...
+            <br> Je fais des projets mais je les finis jamais lol </br>
+        </p>
+    </div>
+
+
+    <footer>
+        <p>by: Project Helnaya</p>
+        <p>Contact me:
+            <a href="mailto:Non mdr">Non</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    const myList = [
+        "'J'ai faim' - FRAUDuri Cap",
+        "'je ne prends pas mon riz avec la sauce, parce que je n'aime pas la saucellerie.' - le meilleur rappeur (meilleur )",
+        "'Les enfants ne sont pas livrés avec un mode d'emploi' - Harlan Coben, Double Piège",
+        "'Le jour où je suis devenu grossophobe, c'est quand je me suis regardé dans le miroir' - Cicada_man, 2025",
+        "'Moi, j'suis juste un autre gars qui a effacé son nom comme un dr-' Allez ferme ta gueule, c'est bon...",
+        "'BAKUSHIIIIIN !!'",
+        "'Si vous voyez un pauvre, défoncez-le et jetez-le dans les poubelles'",
+    ]
+
+    randomizeFunction()
+
+    function randomizeFunction() {
+        document.getElementById("randomWord").innerHTML = myList[Math.floor(Math.random() * myList.length)]
+    }
+
+</script>
