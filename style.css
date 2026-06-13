@@ -49,10 +49,17 @@ li:last-child {
 }
 .title {
   margin: 0px 40px;
-  height: 400px;
+  min-height: 400px;
   background: url("/assets/");
   background-repeat: repeat-x;
   border-radius: 8px;
+  text-align: center;
+  margin: 10px 0;
+}
+.title img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 h1 {
   font-family: Verdana, sans-serif;
@@ -79,4 +86,5 @@ footer {
   background-color: #f1f1f1;
   padding: 10px;
   margin-top: 40px;
+  text-align: center;
 }
